@@ -14,16 +14,16 @@ Gem::Specification.new do |s|
   s.files      = `git ls-files`.split($\)
   s.test_files = Dir["spec/**/*"]
 
-  s.add_dependency 'rails', '~> 4.1.0'
+  s.add_dependency 'rails'
   s.add_dependency 'jquery-rails'
-  s.add_dependency 'sass-rails', '~> 4.0.3'
+  s.add_dependency 'sass-rails'
   #s.add_dependency 'bootstrap-sass', '~> 2.1'
   s.add_dependency 'redcarpet'
   s.add_dependency 'remotipart', '~> 1.0'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'simplecov'
-  s.add_development_dependency 'rspec-rails', '~> 2.14.2'
+  s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'pry'
   s.add_development_dependency 'thin'
 end

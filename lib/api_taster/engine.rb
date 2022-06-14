@@ -6,7 +6,7 @@ module ApiTaster
       g.test_framework :rspec, :view_specs => false
     end
 
-    config.assets.precompile += %w( glyphicons-halflings.png glyphicons-halflings-white.png )
+    config.assets.precompile += %w( api_taster/application.js glyphicons-halflings.png glyphicons-halflings-white.png )
 
     silence_warnings do
       begin

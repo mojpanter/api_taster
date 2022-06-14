@@ -48,7 +48,7 @@ module ApiTaster
             end
           end
 
-          next if route.verb.source.empty?
+          next if route.verb.empty?
 
           self.routes << normalise_route(route)
         end
@@ -116,7 +116,7 @@ module ApiTaster
       end
 
       def normalise_route(route, path_prefix = nil)
-        route.verb.source.split('|').map do |verb|
+        route.verb.split('|').map do |verb|
           path = path_prefix.to_s + route.path.spec.to_s.sub('(.:format)', '')
           {
             :id        => @_route_counter+=1,
